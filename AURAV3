@@ -1,7 +1,10 @@
 local Testing = false
 -- Cmds
-if table.find(getgenv().Alts,game.Players.LocalPlayer.UserId) then
+if table.find(getgenv().Alt1,game.Players.LocalPlayer.UserId) then
 	getgenv().PointInTable = table.find(getgenv().Alts,game.Players.LocalPlayer.UserId)
+else
+if table.find(getgenv().Alt2,game.Players.LocalPlayer.UserId) then
+    getgenv().PointInTable = table.find(getgenv().Alts,game.Players.LocalPlayer.UserId)
 else
 	return
 end
